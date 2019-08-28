@@ -8,3 +8,6 @@ VM2 module:
 https://www.npmjs.com/package/vm2
 
 Comparison of Performance and Usage is done here. Feel free to clone or download or fork for further improvement or as a headstart for starting the usage and checking out its feasibilty for personal or commercial usage.
+
+Node Version: 8.X
+VM2: 3.8.3
