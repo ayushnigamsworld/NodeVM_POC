@@ -1,0 +1,36 @@
+{
+  "name": "vmPOC",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vmPOC.js",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "4.17.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "tsc && grunt build"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "**/app/**/*.*"
+    ],
+    "exclude": [
+      "**/dist/**/*.*",
+      "**/*.d.ts"
+    ],
+    "reporter": [
+      "html"
+    ],
+    "all": true
+  },
+  "dependencies": {
+    "request": "^2.88.0",
+    "require": "^2.4.20",
+    "vm2": "^3.8.3"
+  }
+}
